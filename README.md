@@ -43,7 +43,27 @@ ScamGuard AI 旨在建立一套智慧型 AI 系統，能即時辨識潛在的詐
 - 可疑詞句標紅或列表顯示  
 
 ---
-<pre lang="markdown"><code>（你可以複製下面這段直接貼上） ``` ## 🗂️ 專案架構 Project_PredictScamInfo/ ├── frontend/ # 使用者前端介面 │ ├── index.html # 主頁面（輸入框與結果顯示） │ ├── style.css # 前端樣式 │ └── script.js # 發送 POST 請求至後端 API ├── backend/ # 後端 FastAPI 應用 │ ├── main.py # 主應用程式與 /predict API │ ├── model/ # 模型與預測邏輯 │ │ ├── model.pkl # 訓練後模型（尚未加入） │ │ ├── predictor.py # 載入模型與執行預測 │ │ └── bert_tokenizer_files/ # BERT tokenizer 檔案 │ ├── requirements.txt # 所需套件 │ └── .env # 環境變數（模型路徑等） ├── data/ # 訓練資料與前處理資料 │ └── messages.csv # 範例資料 ├── README.md # 專案說明文件 └── .gitignore # 忽略上傳的檔案規則 ``` </code></pre>
+
+## 🗂️ 專案架構
+
+Project_PredictScamInfo/
+├── frontend/               # 使用者前端介面
+│   ├── index.html          # 主頁面（輸入框與結果顯示）
+│   ├── style.css           # 前端樣式
+│   └── script.js           # 發送 POST 請求至後端 API
+├── backend/                # 後端 FastAPI 應用
+│   ├── main.py             # 主應用程式與 /predict API
+│   ├── model/              # 模型與預測邏輯
+│   │   ├── model.pkl       # 訓練後模型（尚未加入）
+│   │   ├── predictor.py    # 載入模型與執行預測
+│   │   └── bert_tokenizer_files/ # BERT tokenizer 檔案
+│   ├── requirements.txt    # 所需套件
+│   └── .env                # 環境變數（模型路徑等）
+├── data/                   # 訓練資料與前處理資料
+│   └── messages.csv        # 範例資料
+├── README.md               # 專案說明文件
+└── .gitignore              # 忽略上傳的檔案規則
+
 
 ---
 ## 🚀 如何運行專案
