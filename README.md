@@ -46,6 +46,7 @@ ScamGuard AI 旨在建立一套智慧型 AI 系統，能即時辨識潛在的詐
 
 ## 🗂️ 專案架構
 
+```bash
 Project_PredictScamInfo/
 ├── frontend/               # 使用者前端介面
 │   ├── index.html          # 主頁面（輸入框與結果顯示）
@@ -63,7 +64,7 @@ Project_PredictScamInfo/
 │   └── messages.csv        # 範例資料
 ├── README.md               # 專案說明文件
 └── .gitignore              # 忽略上傳的檔案規則
-
+```
 
 ---
 ## 🚀 如何運行專案
