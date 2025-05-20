@@ -74,32 +74,41 @@ Project_PredictScamInfo/
 ```bash
 git clone <你的專案 Git 網址>
 cd Project_PredictScamInfo
+```
 
 建立虛擬環境（建議）：
+```bash
 python3 -m venv venv_backend
 source venv_backend/bin/activate  # macOS/Linux
-# Windows:
+# Windows 使用：
 # .\venv_backend\Scripts\activate
+```
 
 安裝後端依賴套件：
+```bash
 cd backend
 pip install -r requirements.txt
+```
 
-2️⃣ 啟動後端 API
-
+### 2️⃣ 啟動後端 API
+```bash
 cd backend
 uvicorn main:app --reload --port 8000
-看到：
+```
 
-
+你會看到類似訊息：
+```bash
 Uvicorn running on http://127.0.0.1:8000
-3️⃣ 啟動前端網頁
-直接用瀏覽器打開：
+```
 
-
+### 3️⃣ 啟動前端網頁
+直接用瀏覽器打開以下檔案：
+```bash
 Project_PredictScamInfo/frontend/index.html
-🧪 使用說明
-輸入欲檢測的訊息（如 LINE 或簡訊內容）
+```
+
+## 🧪 使用說明
+輸入欲檢測的訊息（例如 LINE 或簡訊內容）
 
 點擊「檢測！」按鈕
 
@@ -111,15 +120,11 @@ Project_PredictScamInfo/frontend/index.html
 
 模型可信度百分比
 
-🔭 開發進度與未來展望
+## 🔭 開發進度與未來展望
 ✅ 前後端基本串接完成
-
 ✅ 模擬辨識功能可正常運作
 
-未來：
-
+未來計畫：
 📌 整合實際訓練後模型
-
 📌 實現歷史紀錄保存
-
 📌 延伸應用至 LINE 機器人、Chrome 外掛、手機 App
