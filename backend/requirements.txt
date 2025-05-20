@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+pydantic # 用 Pydantic 做資料驗證
+python-dotenv # 用 .env 檔案
